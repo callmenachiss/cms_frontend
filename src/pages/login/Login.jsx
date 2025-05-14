@@ -62,7 +62,7 @@ const Login = () => {
             <div className="submit" onClick={handleSubmit}>Login</div>
           </div>
           <div className="already">Don't have account?
-            <span className="login-link" onClick={() => navigate('/signup')}> Click Here!</span>
+            <span className="login-link" onClick={() => navigate('/')}> Click Here!</span>
           </div>
         </div>
         <ToastContainer />
