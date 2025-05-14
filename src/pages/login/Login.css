@@ -1,0 +1,134 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 470px;
+    width: 600px;
+    height: 700px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #ffff;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.special {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  height: 100vh;
+  background: linear-gradient(#2A00B7,#42006c);
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 30px;
+
+
+}
+
+.text{
+    color: #3c009d;
+    font-size: 50px;
+    font-weight: 550;   
+}
+
+.smalltext{
+    color: #3c009d;
+    font-size: 18px;
+    font-weight: 600;  
+    padding-top: 5px; 
+}
+
+.underline{
+    width: 90px;
+    height: 6px;
+    background: #3c009d;
+    border-radius: 9px;
+}
+
+.inputs{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 470px;
+    height:65px;
+    background: #eaeaea;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 5px #4c00b4;
+}
+
+.input img {
+    margin: 0px 30px;
+}
+
+.input input{
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+}
+
+.forgotpassword{
+    padding-left: 140px;
+    margin-top: 27px;
+    color: #ed4848;
+    font-size: 18px;
+}
+
+.forgotpassword span{
+    color: #4c00b4;
+    cursor: pointer;
+}
+
+.already{
+    color: black;
+    padding-left: 150px;
+    padding-top: 15px;
+}
+
+.already span{
+    color: #4c00b4;
+    cursor: pointer;
+}
+
+.submit-container{
+    display: flex;
+    gap: 30px;
+    margin: 35px 10px;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    color: #ffff;
+    background: #4c00b4;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 5px;
+}
