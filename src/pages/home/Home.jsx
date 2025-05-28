@@ -128,7 +128,7 @@ export const Home = () => {
 
     if (formValues) {
       try {
-        await axios.put(`http://localhost:8080/customer/update/${id}`, {
+        await axios.put(`https://cms-sde1.onrender.com/customer/update/${id}`, {
           username: formValues.username,
           password: formValues.password
         });
