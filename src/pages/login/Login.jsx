@@ -26,7 +26,7 @@ const Login = () => {
       password,
     };
     try {
-      const response = await axios.post("http://localhost:8080/customer/login", customer);
+      const response = await axios.post("https://cms-sde1.onrender.com/customer/login", customer);
       toast.success("Login successful ️ - " + response.data, { autoClose: 3000 });
       navigate("/home");
     } catch (error) {

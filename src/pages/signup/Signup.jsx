@@ -35,7 +35,7 @@ const Signup = () => {
       confirmPassword,
     };
     try {
-      const response = await axios.post("http://localhost:8080/customer/createCustomer", customer);
+      const response = await axios.post("https://cms-sde1.onrender.com/customer/createCustomer", customer);
       toast.success("Signup successful ❤️️ - " + response.data, { autoClose: 3000 });
       setUsername("");
       setEmail("");
