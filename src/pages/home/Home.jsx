@@ -10,7 +10,7 @@ export const Home = () => {
   const navigate = useNavigate();
   const handleCustomers = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/customer/AllCustomers");
+      const response = await axios.get("https://cms-sde1.onrender.com/customer/AllCustomers");
       setCustomers(response.data);
     } catch (error) {
       console.error("Error during fetch the data from sources", error);
@@ -71,7 +71,7 @@ export const Home = () => {
         return;
       }
       try {
-        await axios.post(`http://localhost:8080/customer/createCustomer`, {
+        await axios.post(`https://cms-sde1.onrender.com/customer/createCustomer`, {
           username: formValues.username,
           email: formValues.email,
           password: formValues.password
@@ -156,7 +156,7 @@ export const Home = () => {
 
     if (result.isConfirmed) {
       try {
-        await axios.delete(`http://localhost:8080/customer/delete/${id}`);
+        await axios.delete(`https://cms-sde1.onrender.com/customer/delete/${id}`);
         Swal.fire('Deleted!', 'Customer has been deleted.', 'success');
         handleCustomers();
       } catch (error) {
